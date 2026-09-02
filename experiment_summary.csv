@@ -1,0 +1,7 @@
+method,val_acc,test_acc,sparsity,notes
+baseline (float32),0.8748333333333334,0.8733,0.0,vanilla trained model
+pruned 20%,0.889,0.885,0.20000094919887615,Model saved: model_pruned_20.pth
+pruned 50%,0.8875,0.8826,0.5,Model saved: model_pruned_50.pth
+pruned 80%,0.886,0.8791,0.7999990508011239,Model saved: model_pruned_80.pth
+post-training static quant,,0.8733,,state: model_static_quantized.pth
+quantization-aware training (QAT),,0.8765,,state: model_qat_quantized.pth
